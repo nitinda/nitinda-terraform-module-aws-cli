@@ -1,6 +1,6 @@
 resource "null_resource" "aws_cli_resource" {
     triggers = {
-        triggers_ids = var.triggers_ids
+        triggers_id = var.triggers_id
     }
 
     provisioner "local-exec" {
