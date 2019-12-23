@@ -14,5 +14,5 @@ variable "role" {
 variable "triggers_ids" {
   description = "IDs or ARNs of any resources that are a dependency of the resource created by this module."
   type        = any
-  default     = {}
+  default     = [{}]
 }
