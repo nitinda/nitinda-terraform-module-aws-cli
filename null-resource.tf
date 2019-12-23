@@ -1,5 +1,5 @@
 resource "null_resource" "aws_cli_resource" {
-    triggers = {
+    triggers {
         triggers_ids = var.triggers_ids
     }
 
