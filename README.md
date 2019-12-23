@@ -22,8 +22,6 @@ This module deploys aws services details are in respective feature branches.
 Below we are able to check the resources that are being created as part of this module call:
 
 
-From branch : **_terraform-12/master_**
-
 - **_Execute shell command (Terraform 12 supported code)_**
 
 
