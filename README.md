@@ -63,6 +63,9 @@ The variables required in order for the module to be successfully called from th
 | **_cmd_** | The command used to create the resource | string |**_Required_** |
 | **_destroy\_cmd_** | The command used to destroy the resource | string | **_Required_** |
 | **_role_** | The role to assume in order to run the cli command. | string | **_Optional_** |
+| **_triggers\_ids_** | IDs or ARNs of any resources that are a dependency | any | **_Optional_** |
+
+
 
 ## Outputs
 
