@@ -8,4 +8,5 @@ variable "destroy_cmd" {
 
 variable "role" {
   description = "The role to assume in order to run the cli command."
+  default     = ""
 }

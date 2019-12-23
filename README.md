@@ -60,9 +60,9 @@ The variables required in order for the module to be successfully called from th
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|:---:|
-
-
-
+| **_cmd_** | The command used to create the resource | string |**_Required_** |
+| **_destroy\_cmd_** | The command used to destroy the resource | string | **_Required_** |
+| **_role_** | The role to assume in order to run the cli command. | string **_Optional_** |
 
 ## Outputs
 
