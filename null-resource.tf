@@ -1,4 +1,4 @@
-resource "null_resource" "aws_cli_resource" {
+resource "null_resource" "null_resource" {
     triggers = {
         triggers_id = var.triggers_id
     }
