@@ -1,4 +1,4 @@
-resource "null_resource" "aws_cli_resource_create" {
+resource "null_resource" "aws_cli_resource" {
     triggers = {
         triggers_id = var.triggers_id
     }
@@ -7,15 +7,9 @@ resource "null_resource" "aws_cli_resource_create" {
         when    = create
         command = "/bin/bash -c '${var.role == "" ? "" : "${local.assume_role_cmd} && "}${var.cmd}'"
     }
-}
 
-resource "null_resource" "aws_cli_resource_destroy" {
-    triggers = {
-        triggers_id = var.triggers_id
-    }
-   
     provisioner "local-exec" {
-        when    = destroy
+        when    != create
         command = "/bin/bash -c '${var.role == "" ? "" : "${local.assume_role_cmd} && "}${var.destroy_cmd}'"
     }
 }
