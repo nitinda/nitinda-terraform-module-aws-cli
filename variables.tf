@@ -11,3 +11,8 @@ variable "triggers_id" {
   description = "IDs or ARNs of any resources that are a dependency of the resource created by this module."
   default     = ""
 }
+
+variable "account_id" {
+  description = "AWS Account ID"
+  description = ""
+}
