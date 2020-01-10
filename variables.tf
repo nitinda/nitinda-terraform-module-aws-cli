@@ -14,5 +14,5 @@ variable "triggers_id" {
 
 variable "account_id" {
   description = "AWS Account ID"
-  description = ""
+  default = ""
 }
